@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sparkle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Book / Notebook icon -->
+  <g transform="translate(4, 6)">
+    <!-- Book cover -->
+    <rect x="2" y="4" width="36" height="44" rx="4" ry="4" fill="url(#grad1)" />
+    <!-- Book spine -->
+    <rect x="2" y="4" width="8" height="44" rx="3" ry="3" fill="url(#grad2)" opacity="0.7"/>
+    <!-- Page lines -->
+    <line x1="16" y1="16" x2="32" y2="16" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="16" y1="23" x2="30" y2="23" stroke="rgba(255,255,255,0.4)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="16" y1="30" x2="32" y2="30" stroke="rgba(255,255,255,0.5)" stroke-width="1.8" stroke-linecap="round"/>
+    <line x1="16" y1="37" x2="28" y2="37" stroke="rgba(255,255,255,0.4)" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- AI Sparkle (top right of book) -->
+    <g transform="translate(32, 2)">
+      <!-- Main sparkle -->
+      <path d="M6 0 L7.5 4.5 L12 6 L7.5 7.5 L6 12 L4.5 7.5 L0 6 L4.5 4.5 Z" fill="url(#sparkle)"/>
+      <!-- Mini sparkle -->
+      <path d="M14 8 L14.8 10.2 L17 11 L14.8 11.8 L14 14 L13.2 11.8 L11 11 L13.2 10.2 Z" fill="#fbbf24" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- Text: NotebookLM -->
+  <text x="56" y="28" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="700" fill="url(#grad1)">
+    Notebook
+  </text>
+  <text x="56" y="28" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="700">
+    <tspan fill="url(#grad1)">Notebook</tspan><tspan fill="#a78bfa" font-weight="800">LM</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="57" y="46" font-family="Inter, -apple-system, sans-serif" font-size="10.5" fill="#8888aa" font-weight="400" letter-spacing="0.8">
+    AI-Powered Study Companion
+  </text>
+</svg>
